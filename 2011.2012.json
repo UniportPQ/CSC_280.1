@@ -1,0 +1,780 @@
+[
+ 
+ {
+ "type": "pageInfo",
+ "kind": "pureOBJ",
+ "course_title": "COMPUTER PROGRAMMING",
+ "code": "CSC 280.1",
+ "session": "2011/2012",
+ "topics": [
+  "Fortran Programming",
+    "Loops and Control Structures",
+    "Syntax and Conventions",
+    "Variable Declaration",
+    "Mathematical Functions",
+    "Arithmetic Operations",
+    "Integer Division",
+    "Arrays",
+    "Input/Output",
+    "Functions and Subprograms",
+    "Variable Scope",
+    "Statement Types",
+    "Flowcharts",
+    "Algorithm Design"
+],
+ "time": "90"
+},
+
+
+{
+ "type": "Instruction",
+ "content": "Attempt All Questions"
+},
+{
+  "type": "Instruction",
+  "content": "Use the following program for question 1-6:<br><br><code>C ***** THIS IS A PROGRAM THAT ILLUSTRATES NOTHING *****<br>      DIMENSION NWORD(20)<br><br>      WRITE (12,30)<br>30    FORMAT(1X, \"KEY IN 20 INTEGER NUMBERS SEPARATED BY COMMAS\")<br>      READ (11,40) NWORD<br>40    FORMAT(20I4)<br><br>      DO 100 J = 1,60,2<br>         L = J + 1<br>90       IF (NWORD(J) .GT. NWORD(L)) GOTO 200<br>100   CONTINUE<br><br>200   STOP<br>      END</code>"
+},
+
+
+   {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "The maximum value of J is",
+      "type": "OBJ",
+      "options": [
+        "120",
+        "2",
+        "1",
+        "60",
+        "100"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "60"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding the DO Loop</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the DO Loop Statement</strong><br>\n    In the program, the line is:<br>\n    <code>DO .100J = 1,60,2</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Understand DO Loop Format</strong><br>\n    In Fortran, <code>DO label variable = start, end, step</code><br>\n    • <strong>Start</strong>: Initial value of J = 1<br>\n    • <strong>End</strong>: Final value J can reach = 60<br>\n    • <strong>Step</strong>: How much J increases each time = 2\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Determine Maximum J Value</strong><br>\n    The loop continues while J ≤ 60.<br>\n    Since J starts at 1 and increases by 2 each time (1, 3, 5, ...),<br>\n    the largest value J can have is <strong>60</strong>.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The maximum value of J is 60\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "The Initial value of J is",
+      "type": "OBJ",
+      "options": [
+        "120",
+        "21",
+        "1",
+        "60",
+        "100"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Finding the Starting Value</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Look at the DO Loop</strong><br>\n    The statement is: <code>DO .100J = 1,60,2</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Identify the First Number</strong><br>\n    In Fortran DO loops:<br>\n    <code>DO .100J = <span style='color: var(--cAns);'>1</span>,60,2</code><br>\n    The first number (1) is where J starts.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Loop Execution</strong><br>\n    • First iteration: J = 1<br>\n    • Second iteration: J = 3 (1 + 2)<br>\n    • Third iteration: J = 5 (3 + 2)<br>\n    • And so on...\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The initial value of J is 1\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3i",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "The maximum value of L is",
+      "type": "OBJ",
+      "options": [
+        "100",
+        "61",
+        "1",
+        "2",
+        "62"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "61"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Variable L</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Find How L is Calculated</strong><br>\n    In the program: <code>L = J+1</code><br>\n    This means L is always <strong>one more than J</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Find Maximum L</strong><br>\n    • Maximum J = 60 (from Question 1)<br>\n    • Maximum L = Maximum J + 1<br>\n    • Maximum L = 60 + 1 = <strong>61</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Maximum value of L = 61\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3ii",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "The minimum value of L is",
+      "type": "OBJ",
+      "options": [
+        "100",
+        "61",
+        "1",
+        "2",
+        "62"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Variable L</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Find How L is Calculated</strong><br>\n    In the program: <code>L = J+1</code><br>\n    This means L is always <strong>one more than J</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Find Minimum L</strong><br>\n    • Minimum J = 1 (from DO 100 J = 1,60,2)<br>\n    • Minimum L = Minimum J + 1<br>\n    • Minimum L = 1 + 1 = <strong>2</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Minimum value of L = 2\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "What is the maximum number of times statement 100 will be executed?",
+      "type": "OBJ",
+      "options": [
+        "40",
+        "30",
+        "60",
+        "1",
+        "2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "30"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Counting Loop Iterations</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand Statement 100</strong><br>\n    Statement 100 is: <code>100 CONTINUE</code><br>\n    This marks the end of the DO loop. It executes <strong>each time the loop completes one cycle</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Calculate Total Loop Iterations</strong><br>\n    DO loop: <code>J = 1,60,2</code><br>\n    • J values: 1, 3, 5, 7, ..., 59<br>\n    • Total values = ?\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Use the Formula</strong><br>\n    Number of iterations = \\(\\frac{\\text{(end - start)}}{\\text{step}} + 1\\)<br>\n    \\(\\frac{(60 - 1)}{2} + 1\\)<br>\n    \\(\\frac{59}{2} + 1\\)<br>\n    \\(29.5 + 1\\) = 30.5<br>\n    Since J must be ≤ 60, the last valid J is 59.<br>\n    So iterations = 30\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Why Maximum is 30?</strong><br>\n    The IF statement might cause an early exit (GOTO 200),<br>\n    but <strong>maximum</strong> means if the IF condition is <em>never true</em>,<br>\n    the loop runs all 30 times, executing CONTINUE each time.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Statement 100 executes maximum 30 times\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Fortran Programming", "Loops and Control Structures"],
+    "Question": {
+      "content": "What is the minimum number of times statement 100 will be executed?",
+      "type": "OBJ",
+      "options": [
+        "40",
+        "30",
+        "60",
+        "1",
+        "2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Minimum Loop Execution</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand the IF Condition</strong><br>\n    Inside the loop: <code>IF(NWORD(J).GT.NWORD(L))GOTO 200</code><br>\n    This means: <em>If NWORD(J) > NWORD(L), jump to STOP (line 200)</em>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: What is Minimum Execution?</strong><br>\n    <strong>Minimum</strong> means: how few times can CONTINUE execute?<br>\n    Answer: If the IF condition is true <strong>immediately</strong> on the first loop.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: First Loop Scenario</strong><br>\n    • First iteration: J = 1, L = 2<br>\n    • IF checks: NWORD(1) > NWORD(2)?<br>\n    • If YES → GOTO 200 (STOP)<br>\n    • CONTINUE (100) executes <strong>once</strong> before the jump\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Can it be Zero?</strong><br>\n    No, because the DO loop structure:<br>\n    1. Sets J = 1<br>\n    2. Executes loop body (including IF check)<br>\n    3. Only after the body does it reach CONTINUE<br>\n    So CONTINUE always runs at least once per started iteration.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Statement 100 executes minimum 1 time\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": ["Fortran Programming", "Syntax and Conventions"],
+    "Question": {
+      "content": "The C in line one indicates",
+      "type": "OBJ",
+      "options": [
+        "Beginning of program",
+        "Comment",
+        "end",
+        "Statement number",
+        "Loop"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Comment"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Fortran Comments</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Look at Line One</strong><br>\n    The first line in the program is:<br>\n    <code>C ******</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Fortran Comment Rule</strong><br>\n    In older Fortran (like in this program):<br>\n    • Any line starting with <strong>C</strong> in column 1 is a <strong>comment</strong><br>\n    • Comments are ignored by the computer<br>\n    • They're just notes for humans reading the code\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: What This Line Does</strong><br>\n    <code>C ******</code> means:<br>\n    • C = This is a comment line<br>\n    • ****** = Just decorative asterisks<br>\n    • The entire line has no effect on program execution\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The C indicates a Comment line\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": ["Fortran Programming", "Variable Declaration"],
+    "Question": {
+      "content": "A real variable normally begins with",
+      "type": "OBJ",
+      "options": [
+        "B to K",
+        "A to H or B to Y",
+        "A to H or O to Z",
+        "C to H or C to Z",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A to H or O to Z"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Fortran Implicit Typing Rules</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Default Fortran Rule</strong><br>\n    Without explicit declaration (REAL or INTEGER), Fortran uses:<br>\n    • Variables starting with <strong>I, J, K, L, M, N</strong> → INTEGER<br>\n    • Variables starting with <strong>any other letter</strong> → REAL\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Break Down the Alphabet</strong><br>\n    Alphabet: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>\n    • INTEGER letters: <strong>I to N</strong> (I, J, K, L, M, N)<br>\n    • REAL letters: <strong>A to H</strong> (before I) and <strong>O to Z</strong> (after N)\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> A to H or O to Z\n  </div>\n</div>"
+    }
+  },
+  {
+  "type": "Instruction",
+  "content": "Consider the following statements for question 8-11:<br><br><code>INTEGER ANSWER<br>I = SQRT(25)<br>J = 1^3<br>K = J ** 2<br>ANSWER = I/J*K</code>"
+},
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "topic": ["Fortran Programming", "Mathematical Functions"],
+    "Question": {
+      "content": "What is the value of I?",
+      "type": "OBJ",
+      "options": [
+        "5",
+        "4",
+        "2",
+        "7",
+        "3"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "5"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding SQRT Function and INTEGER Type</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Look at the Code</strong><br>\n    The relevant lines are:<br>\n    <code>INTEGER ANSWER</code><br>\n    <code>I = SQRT(25)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: What is SQRT(25)?</strong><br>\n    • SQRT = Square Root function<br>\n    • SQRT(25) = √25 = 5\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Important Fortran Detail</strong><br>\n    Even though I starts with 'I' (which normally means INTEGER),<br>\n    the statement <code>INTEGER ANSWER</code> only declares ANSWER as INTEGER.<br>\n    I, J, K are <strong>implicitly INTEGER</strong> because they start with I, J, K.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Calculate I</strong><br>\n    • SQRT(25) produces 5.0 (a real number)<br>\n    • I is INTEGER, so it stores only the whole number part<br>\n    • I = 5.0 → becomes 5 when stored as INTEGER\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> I = 5\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 9",
+    "topic": ["Fortran Programming", "Arithmetic Operations", "Bitwise Operations"],
+    "Question": {
+      "content": "What is the value of J?",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "3",
+        "9",
+        "4",
+        "10"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Bitwise XOR in Fortran</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Look at the Statement</strong><br>\n    The code says:<br>\n    <code>J = 1^3</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Understand ^ Operator in Fortran</strong><br>\n    In Fortran, the <strong>^</strong> operator is <strong>bitwise XOR</strong> (exclusive OR):<br>\n    • Compares corresponding bits of two numbers<br>\n    • Result bit is 1 if bits are different, 0 if same\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate 1 XOR 3</strong><br>\n    Convert to binary:<br>\n    • 1 = 01 (binary)<br>\n    • 3 = 11 (binary)<br>\n    • XOR: 01 XOR 11 = 10 (binary)<br>\n    • 10 (binary) = 2 (decimal)\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> J = 2 (1 XOR 3 = 2)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 10",
+    "topic": ["Fortran Programming", "Arithmetic Operations"],
+    "Question": {
+      "content": "What is the value of K?",
+      "type": "OBJ",
+      "options": [
+        "5",
+        "4",
+        "2",
+        "7",
+        "3"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Exponentiation in Fortran</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Review Previous Values</strong><br>\n    From previous questions:<br>\n    • I = 5 (from SQRT(25))<br>\n    • J = -2 (from 1 - 3)<br>\n    These values are needed for calculating K.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Look at the K Calculation</strong><br>\n    The code says:<br>\n    <code>K = J ** 2</code><br>\n    In Fortran, <strong>**</strong> means \"to the power of\" (exponentiation).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate J ** 2</strong><br>\n    • J = -2<br>\n    • J ** 2 = (-2)² = (-2) × (-2) = 4<br>\n    • Remember: Negative × Negative = Positive\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Consider Variable Type</strong><br>\n    • K starts with 'K' → automatically INTEGER<br>\n    • 4 is a whole number, so it stores perfectly as INTEGER<br>\n    • K = 4\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> K = 4\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 11",
+    "topic": ["Fortran Programming", "Arithmetic Operations", "Integer Division"],
+    "Question": {
+      "content": "What is the value of ANSWER?",
+      "type": "OBJ",
+      "options": [
+        "2.0",
+        "9",
+        "8.0",
+        "2",
+        "8"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "8"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Calculation</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Review All Values</strong><br>\n    From the code:<br>\n    • I = SQRT(25) = 5<br>\n    • J = 1^3 = 2 (bitwise XOR)<br>\n    • K = J**2 = 2² = 4<br>\n    • All variables are INTEGER\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Calculate I/J*K</strong><br>\n    Expression: <code>ANSWER = I / J * K</code><br>\n    Left to right: <code>(I / J) * K</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Integer Division</strong><br>\n    • 5 ÷ 2 = 2.5 → truncated to <strong>2</strong> (INTEGER division)<br>\n    • 2 × 4 = <strong>8</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> ANSWER = 8 (INTEGER result, not 8.0)\n  </div>\n</div>"
+    }
+  },
+  {
+  "type": "Instruction",
+  "content": "Use the following statement for questions 12 - 20:<br><br><code>DIMENSION JCOMP(6,8), CHEM(2000), PSB(3,2), NAME(60-)</code>"
+},
+  {
+    "type": "Question",
+    "name": "Question 12",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "The name of the third array is",
+      "type": "OBJ",
+      "options": [
+        "PSB(3,2)",
+        "PSB",
+        "NAME(3)",
+        "CHEMS(3)",
+        "JCOMP(3,2)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "PSB"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying Array Names</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Examine DIMENSION Statement</strong><br>\n    <code>DIMENSION JCOMP(6,8), CHEM(2000), PSB(3,2), NAME(60-)</code><br>\n    Arrays separated by commas:\n    • 1st: JCOMP<br>\n    • 2nd: CHEM<br>\n    • 3rd: PSB<br>\n    • 4th: NAME (likely NAME(60) despite dash typo)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: What is an Array Name?</strong><br>\n    • Array name = The identifier without dimensions<br>\n    • Example: In <code>PSB(3,2)</code>, <strong>PSB</strong> is the name<br>\n    • <code>(3,2)</code> are dimensions, not part of the name\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The third array name is PSB\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 13",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "What type of array is the 1st array?",
+      "type": "OBJ",
+      "options": [
+        "Three-dimensional",
+        "Vector",
+        "Table",
+        "One-dimensional",
+        "Two-dimensional"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Two-dimensional"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Array Dimensions</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the First Array</strong><br>\n    From the DIMENSION statement:<br>\n    First array: <code>JCOMP(6,8)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Count the Numbers in Parentheses</strong><br>\n    • <code>JCOMP(6,8)</code> has <strong>two numbers</strong>: 6 and 8<br>\n    • These numbers define the array's <strong>dimensions</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Dimension Rules</strong><br>\n    Number of dimensions = Number of numbers in parentheses:<br>\n    • <code>NAME(100)</code> → 1 number → 1-dimensional (vector)<br>\n    • <code>TABLE(5,10)</code> → 2 numbers → 2-dimensional (matrix)<br>\n    • <code>CUBE(3,4,5)</code> → 3 numbers → 3-dimensional\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Apply to JCOMP</strong><br>\n    • <code>JCOMP(6,8)</code> has 2 numbers: 6 and 8<br>\n    • Therefore, it has <strong>2 dimensions</strong><br>\n    • 2-dimensional arrays are like tables or matrices\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Check the Other Arrays</strong><br>\n    For comparison:<br>\n    • <code>CHEM(2000)</code> → 1 number → 1-dimensional (vector)<br>\n    • <code>PSB(3,2</code> → 2 numbers → 2-dimensional<br>\n    This confirms our understanding.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The first array JCOMP(6,8) is Two-dimensional\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 14",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many elements does the first array have?",
+      "type": "OBJ",
+      "options": [
+        "30",
+        "32",
+        "48",
+        "9",
+        "8"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "48"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Calculating Total Elements in a 2D Array</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the First Array</strong><br>\n    First array: <code>JCOMP(6,8)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Understand What the Numbers Mean</strong><br>\n    In <code>JCOMP(6,8)</code>:<br>\n    • <strong>6</strong> = number of rows<br>\n    • <strong>8</strong> = number of columns<br>\n    Think of it like a table with 6 rows and 8 columns.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate Total Elements</strong><br>\n    Total elements = Rows × Columns<br>\n    Total = 6 × 8 = <strong>48</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Visual Representation</strong><br>\n    Imagine a table:<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0; text-align: center;'>\n      6 rows × 8 columns = 48 cells<br>\n      Each cell can store one element/value\n    </div>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The first array has 48 elements\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 15",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many elements does the last array have?",
+      "type": "OBJ",
+      "options": [
+        "60",
+        "60.0",
+        "6.0",
+        "60.00",
+        "6"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "60"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying the Last Array</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Find the Last Array</strong><br>\n    Looking at the DIMENSION statement:<br>\n    <code>JCOMP(6,8), CHEM(2000), PSB(3,2 NAME(60-)</code><br>\n    The last complete array seems to be <code>PSB(3,2</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: But There's Also NAME(60-)</strong><br>\n    The <code>NAME(60-)</code> appears to be a fourth array, though it might have a typo.<br>\n    If we consider <code>NAME(60)</code> as the last array, it has 60 elements.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Count Elements in PSB</strong><br>\n    If PSB is the last array: <code>PSB(3,2)</code><br>\n    Elements = 3 × 2 = <strong>6</strong><br>\n    But 6 is an option (e), while 60 appears multiple times.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Most Likely Answer</strong><br>\n    Given the options and the presence of <code>NAME(60-)</code>:<br>\n    • The last array is likely <code>NAME(60)</code> (despite the dash)<br>\n    • 1-dimensional array with 60 elements<br>\n    • Options strongly suggest 60\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The last array has 60 elements\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 16",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many columns does the CHEM array have?",
+      "type": "OBJ",
+      "options": [
+        "0",
+        "2",
+        "20",
+        "200.00",
+        "200"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding 1D Arrays</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the CHEM Array</strong><br>\n    CHEM array: <code>CHEM(2000)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Determine Array Type</strong><br>\n    • <code>CHEM(2000)</code> has only <strong>one</strong> number in parentheses<br>\n    • This means it's a <strong>1-dimensional</strong> array (a vector/list)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: What Are Columns?</strong><br>\n    Columns exist only in <strong>2-dimensional</strong> arrays (tables/matrices).<br>\n    1D arrays have:<br>\n    • Only positions/elements (2000 of them)<br>\n    • <strong>Zero columns</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The CHEM array has 0 columns (it's 1-dimensional)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 17",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many rows does the second array have?",
+      "type": "OBJ",
+      "options": [
+        "0",
+        "2",
+        "20",
+        "200.00",
+        "200"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Rows in 1D Arrays</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the Second Array</strong><br>\n    Second array: <code>CHEM(2000)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Determine Dimension</strong><br>\n    • <code>CHEM(2000)</code> → 1 number → 1-dimensional array<br>\n    • Same reasoning as Question 16\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: What Are Rows?</strong><br>\n    Rows typically exist in <strong>2-dimensional</strong> arrays.<br>\n    In a 1D array:<br>\n    • You could think of it as having 1 long row<br>\n    • Or you could think of it as having 0 traditional rows<br>\n    • Technically, it has <strong>no rows</strong> in the table sense\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Consistency with Previous Answer</strong><br>\n    If CHEM has 0 columns (from Q16),<br>\n    and it's not a 2D table,<br>\n    then it also has <strong>0 rows</strong> in the traditional sense.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The second array has 0 rows (it's 1-dimensional)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 18",
+    "topic": ["Fortran Programming", "Arrays", "Variable Types"],
+    "Question": {
+      "content": "Which of the arrays are real arrays?",
+      "type": "OBJ",
+      "options": [
+        "JCOMP, NAME",
+        "PSM, JCOMP",
+        "SARC, JCOMP, CHEMS, NAME",
+        "PSB, CHEMS",
+        "ANE, SMARK"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "PSB, CHEMS"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying Real vs. Integer Arrays</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Recall Fortran Naming Rule</strong><br>\n    By default (implicit typing):<br>\n    • Names starting with <strong>I, J, K, L, M, N</strong> → INTEGER<br>\n    • Names starting with <strong>any other letter</strong> → REAL\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: List Our Arrays</strong><br>\n    From the DIMENSION statement:<br>\n    1. <strong>JCOMP</strong> → Starts with J → INTEGER<br>\n    2. <strong>CHEM</strong> → Starts with C → REAL<br>\n    3. <strong>PSB</strong> → Starts with P → REAL<br>\n    4. <strong>NAME</strong> → Starts with N → INTEGER\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Identify REAL Arrays</strong><br>\n    REAL arrays are those starting with A-H or O-Z:<br>\n    • CHEM → REAL (C is between A-H)<br>\n    • PSB → REAL (P is between O-Z)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Check Options</strong><br>\n    a) JCOMP, NAME → Both INTEGER (wrong)<br>\n    b) PSM, JCOMP → PSM not in our list, JCOMP INTEGER<br>\n    c) SARC, JCOMP, CHEMS, NAME → SARC not in list<br>\n    d) PSB, CHEMS → PSB (REAL), CHEMS might mean CHEM (REAL)<br>\n    e) ANE, SMARK → Not in our list\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> PSB, CHEMS (assuming CHEMS means CHEM)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 19",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many columns does the first array have?",
+      "type": "OBJ",
+      "options": [
+        "32",
+        "8",
+        "4",
+        "48",
+        "4.8"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "8"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Reading Array Dimensions</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: First Array Definition</strong><br>\n    First array: <code>JCOMP(6,8)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Standard Fortran Convention</strong><br>\n    For 2D arrays: <code>NAME(rows, columns)</code><br>\n    • First number = row count<br>\n    • Second number = column count\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Apply to JCOMP</strong><br>\n    <code>JCOMP(6,8)</code>:<br>\n    • 6 = number of rows<br>\n    • <strong>8 = number of columns</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Avoid Confusion</strong><br>\n    • Total elements = 48 (6 × 8)<br>\n    • Rows = 6<br>\n    • Columns = 8<br>\n    Don't confuse columns with total elements!\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The first array has 8 columns\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 20",
+    "topic": ["Fortran Programming", "Arrays"],
+    "Question": {
+      "content": "How many rows does the first array have?",
+      "type": "OBJ",
+      "options": [
+        "48",
+        "6,8",
+        "68",
+        "6",
+        "8"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "6"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Reading Array Rows</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: First Array Definition</strong><br>\n    First array: <code>JCOMP(6,8)</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Recall the Convention</strong><br>\n    For <code>NAME(rows, columns)</code>:<br>\n    • <strong>First</strong> number = rows<br>\n    • Second number = columns\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Apply to JCOMP</strong><br>\n    <code>JCOMP(<span style='color: var(--cAns);'>6</span>,8)</code>:<br>\n    • <strong>6 = number of rows</strong><br>\n    • 8 = number of columns\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Check Against Options</strong><br>\n    a) 48 → Total elements, not rows<br>\n    b) 6 8 → Looks like \"6 8\" with space<br>\n    c) 68 → Wrong (68 would be 6 and 8 combined)<br>\n    d) 6 → Correct!<br>\n    e) 8 → That's columns, not rows\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The first array has 6 rows\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 21",
+    "topic": ["Fortran Programming", "Mathematical Expressions"],
+    "Question": {
+      "content": "Write Fortran arithmetic expressions which perform calculations indicated by the following equations.<br><br><img src='data:image/jpg;base64,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TZum1q1ba/z48apRo4b69eunqVOn6q9//avatGmjd955x374NZKSkjRp0iR17NhR06dPV0BAgN544w394x//kCQ988wzmjJlSsm4zNcAgHw4deqUcffddxsBAQFGQECA0aJFC+Pnn3820tPTzTFfffWVWQsLC7Mc75T9+/cbHTp0MPbv328vFaiDBw8ajzzyiPHNN9/YSzlKS0szWrVqZQwbNsxeylJ8fLzRq1cv832uV6+esXz5csPlcpljdu7caTRs2NCoV6+esXHjRsvxkZGRxp///Gdj/fr1lv2GYRiffPKJMXPmTPvuYu3q1avGhAkTjM6dOxtnzpwx9//2229Gx44djYCAAKNp06a5/nm5cuWKMW7cOCMgIMDo3LmzcezYMbOWnp5uzJo1y/w9CQgIyPV9PHjwoNGhQwcjICDA6NOnj3H27FmzlpCQYIwePdoICAgwWrVqZfm1iitmKgDkS+Z+Cl9fXy1evFj33XefpfGvYcOGKlOmjBISErRixYoSM1vx2WefqVu3blqzZo0+//xzezlHn332mUJDQ/X000/bS1nK3E/h6empWbNmqV+/fpYegbp166pq1apKT0/X4sWLlZKSYh47duxYtWnTRj4+PoqKitKWLVv03Xffad26dVq/fv0NnxooarZv365Vq1Zp3Lhx8vf3t5fzxOVyacqUKVqxYoU8PT319ttvq2HDhmbdw8NDvXr1slxNcscdd5g/24WGhqp///6Kjo5Wp06d9Nlnn5krmirjz8TatWuljBnAK1euZDq6eCJUAMiX0NBQMySMGDFCrVq1sg+Rn5+fypUrJ2VM4SckJNiHFDuTJ0/WkCFDdO7cOUnSypUrtXPnTvuwbAUFBempp55Su3bt7KUsHT9+3OyneOyxx/TQQw/Zh6h06dKqUqWKJOnw4cOKiYlRYmKixowZo+3bt2vx4sUKDAxUp06dFBgYqOeee07PP/+8Dh06VKJCxYULF/Tmm2/qr3/9a5bvU15t2LBBy5cvlyT16dNHHTt2tA+Rr6+vqlWrJmWsXlq/fn37ECnjVMyLL76ohIQElSlTRq+88so1N3A7c+aM+XNAQMB1h6GihFABIM9SU1O1e/duKWN9irvvvts+RMq4FDIpKUnKuBdFamqqfUixMmLECE2ZMkUffPCBZf/ixYst29lZunSpduzYoWeeecZeytaOHTvM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V69etbwGAAAo2golVAAAgJKPUAEAABxBqAAAAI4gVAAAAEcQKgAAgCMIFQAAwBGECgAA4AhCBQAAcAShAgAAOKLYhIqUlBT961//Uv369dW0aVMtWbJEhbDCOAAAyKNiEypWrFihOXPmKD09XSkpKXrjjTe0detW+zAAAHCTFJtQsX//fst2enq6wsLCLPsAAMDNU2xCRe3ate275O/vb98FAABukmITKp555hndf//95vaAAQPUs2dPyxgAAHDzeBjFqNvRMAzFx8erVKlS8vX1tZcBAMBNVKxCBQAAKLqKzekPAABQtBEqAACAIwgVAADAEYQKAADgCEIFAABwBKECAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMARhAoAAOAIQgUAAHAEoQIAADiCUAEAABxBqAAAAI4gVAAAAEcQKgAAgCMIFQAAwBGECgAA4AhCBQAAcAShAgAAOIJQAQAAHEGoAAAAjiBUAAAARxAqAACAIwgVAADAEYQKAADgCEIFAABwBKECAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMARhAoAAOAIQgUAAHAEoQIAADiCUAEAABxBqAAAAI4gVAAAAEcQKgAAgCMIFQAAwBGECgAA4AhCBQAAcAShAgAAOIJQAQAAHEGoAAAAjiBUAAAARxAqAACAIwgVAADAEYQKAADgCEIFAABwBKECAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMARhAoAAOAIQgUAAHAEoQIAADiCUAEAABxBqAAAAI4gVAAAAEcQKgAAgCMIFQAAwBGECgAA4AhCBQAAcAShAgAAOIJQAQAAHEGoAAAAjiBUAAAARxAqAOQqJSVFH374oQIDA3X58mV7GQAkQgWAnFy+fFmrV69W165d9fHHH+v333+XYRj2YQAgSfIw+BcCQIaEhATNnj1b27dv1+nTpxUXF2ept2/fXkFBQfLx8bHsBwAxUwEgs5SUFK1du1b79u2Tt7e3nnzySY0fP94+DACyRKgAYKpWrZq2bdumiIgIbdu2TVOnTlWjRo3swwAgS4QKAADgCEIFAABwBKECAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMARhAoAAOAIQgUAAHAEoQIAADiCUAEAABxBqAAAAI4gVAAAAEcQKgAAgCMI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vzp37ixJqlChgkaMGCFfX1/bEQBuJYQKAIqJidEjjzyis2fP2kt5UqtWLa1Zs0bVqlWzlwDcQggVAPLspZde0pdffimxoiaALNBTAQAAHEGoAAAAjiBUAMgTwzDkcrnsuwHARE8FgGxFRkbqs88+U0JCgnbv3q1Tp06ZNU9PTzVu3FgtW7ZU5cqVufoDAKECQPYOHDigvn376sqVK/L09FS1atXMy00Nw1BMTIzS09O5+gOARKgAAABOoacCAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMAR2YaK3K40pU49J9Sp54Q69ZxQL7511qkAAACO8EhPTydUAACAG8ZMBQAAcES2PRUAAAD5QagAAACO8EhPTzc8PDws3Zxss80222yzzTbb+d6mpwIAADiB0x8AAMARhAoAAOAIT/fZD5555plnnnnmmecbeaanAgAAOILTHwAAwBGECgAA4Ah6KnjmmWeeeeaZZ0ee6akAAACO4PQHAABwBKECAAA4glABAAAcQagAAACOIFQAAABHECoAAIAjCBUAAMARhAoAAOAIj/T0dBa/AgAAN4wVNQEAgCM4/QEAABxBqAAAAI6gpwIAADiCngoAAOAITn8AAABHECoAAIAjPNLT0w0PDw9lPgvCNttss80222yzne9teioAAIATOP0BAAAcQagAAACO8HSf/eCZZ5555plnnnm+kWd6KgAAgCM4/QEAABzx/wDK/m3k9OseMAAAAABJRU5ErkJggg==' alt='Mathematical equations: 1) XR = (-b + √(b² - 4ac)) / 2a 2) T = ¼N(N+1)'>",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "XR = (-B + SQRT(B**2 - 4.0*A*C)) / (2.0*A)\nT = 1.0 / (4.0*N*(N + 1.0))"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Converting Mathematical Formulas to Fortran</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: First Formula - Quadratic Formula</strong><br>\n    Original: \\(XR = \\frac{-b + \\sqrt{b^2 - 4ac}}{2a}\\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Fortran Conversion Rules:</strong><br>\n    1. √ becomes <strong>SQRT()</strong><br>\n    2. × becomes <strong>*</strong> (asterisk)<br>\n    3. ÷ becomes <strong>/</strong> (forward slash)<br>\n    4. Exponentiation: b² becomes <strong>B**2</strong><br>\n    5. Use parentheses for correct order\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Write First Expression</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <code>XR = (-B + SQRT(B**2 - 4.0*A*C)) / (2.0*A)</code>\n    </div>\n    <strong>Why 4.0 and 2.0?</strong> Using decimals ensures REAL arithmetic, not INTEGER division.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Second Formula</strong><br>\n    Original: \\(T = \\frac{1}{4N(N + 1)}\\)<br>\n    This means: \\(T = \\frac{1}{4 × N × (N + 1)}\\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Write Second Expression</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <code>T = 1.0 / (4.0*N*(N + 1.0))</code>\n    </div>\n    <strong>Important:</strong> The entire denominator must be in parentheses!<br>\n    Without parentheses: <code>1.0/4.0*N*(N+1.0)</code> would be wrong.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Key Takeaways</strong><br>\n    1. Always use <strong>decimal points</strong> (1.0 not 1) for REAL arithmetic<br>\n    2. Use <strong>parentheses generously</strong> to ensure correct calculation order<br>\n    3. SQRT() function for square roots<br>\n    4. ** for exponents\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answers:</strong><br>\n    1. <code>XR = (-B + SQRT(B**2 - 4.0*A*C)) / (2.0*A)</code><br>\n    2. <code>T = 1.0 / (4.0*N*(N + 1.0))</code>\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 22",
+    "topic": ["Fortran Programming", "Syntax and Conventions"],
+    "Question": {
+      "content": "FORTRAN statement may be preceded by a statement label number which is an unsigned number ranging from",
+      "type": "OBJ",
+      "options": [
+        "0-888",
+        "1-8999",
+        "1-99999",
+        "1-999",
+        "0-8999"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1-99999"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Statement Labels in Fortran</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: What is a Statement Label?</strong><br>\n    In Fortran, a statement label is a number placed before a statement that lets you refer to it elsewhere in the program.<br>\n    Example: <code>100 CONTINUE</code> (100 is the label)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Key Rules for Statement Labels</strong><br>\n    1. Must be <strong>unsigned</strong> (no plus/minus sign)<br>\n    2. Must be <strong>integer</strong> (whole number)<br>\n    3. Range: <strong>1 to 99999</strong> in standard Fortran\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Why Not 0?</strong><br>\n    • Statement labels typically start at 1, not 0<br>\n    • 0 is usually not allowed as a statement label<br>\n    This eliminates options with 0 in the range.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Why 99999?</strong><br>\n    In older Fortran standards, statement labels were limited to 5 digits:<br>\n    • Minimum: 1 (1 digit)<br>\n    • Maximum: 99999 (5 digits)<br>\n    This allows enough labels for most programs.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Statement labels range from 1 to 99999\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 23",
+    "topic": ["Fortran Programming", "Variable Declaration"],
+    "Question": {
+      "content": "A real variable normally begins with",
+      "type": "OBJ",
+      "options": [
+        "B to K",
+        "A to H or B to Y",
+        "A to H or O to Z",
+        "C to H or C to Z",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A to H or O to Z"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Fortran Implicit Typing Rules</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Recall the Default Rule</strong><br>\n    Without explicit declaration (like REAL or INTEGER), Fortran uses:<br>\n    • Variables starting with <strong>I, J, K, L, M, N</strong> → INTEGER<br>\n    • Variables starting with <strong>any other letter</strong> → REAL\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Break Down the Alphabet</strong><br>\n    Alphabet: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>\n    • INTEGER range: <strong>I to N</strong> (I, J, K, L, M, N)<br>\n    • REAL range: Everything else\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Express REAL Range Clearly</strong><br>\n    REAL variables begin with:<br>\n    • <strong>A to H</strong> (letters before I)<br>\n    • <strong>O to Z</strong> (letters after N)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Check Each Option</strong><br>\n    a) B to K → Wrong (includes I, J, K which are INTEGER)<br>\n    b) A to H or B to Y → Wrong (includes I-N)<br>\n    c) A to H or O to Z → <strong>Correct!</strong><br>\n    d) C to H or C to Z → Wrong (starts at C, not A; includes I-N)<br>\n    e) None → Wrong (option c is correct)\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> A to H or O to Z\n  </div>\n</div>"
+    }
+  },
+  {
+  "type": "Instruction",
+  "content": "Consider the following statements for questions 24 - 26:<br><br><code>X = 1.2345<br>Y = 9.8765<br>Sum = X + Y<br>PRINT *, Sum<br>PRINT *, FUNC(X,Y)<br>PRINT *, A, B<br>END<br><br>C subprogram section<br>FUNCTION FUNC (A, B)<br>FUNC = A + B<br>RETURN<br>END</code>"
+},
+  {
+    "type": "Question",
+    "name": "Question 24",
+    "topic": ["Fortran Programming", "Basic Arithmetic", "Real Numbers"],
+    "Question": {
+      "content": "What is the value of sum?",
+      "type": "OBJ",
+      "options": [
+        "12.11100",
+        "11.11100",
+        "12.10011",
+        "13.0",
+        "11.11000"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "11.11100"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Simple Addition of Real Numbers</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Identify the Values</strong><br>\n    From the code:<br>\n    <code>X = 1.2345</code><br>\n    <code>Y = 9.8765</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Perform the Addition</strong><br>\n    Sum = X + Y<br>\n    Sum = 1.2345 + 9.8765\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate Carefully</strong><br>\n    Add digit by digit:<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0; text-align: center;'>\n      1.2345<br>\n      + 9.8765<br>\n      ----------<br>\n      <strong>11.1110</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Match with Options</strong><br>\n    Our result: 11.1110<br>\n    Looking at options: 11.11100 (same as 11.1110 with extra zero)<br>\n    Fortran often prints trailing zeros for real numbers.\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> sum = 11.11100\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 25",
+    "topic": ["Fortran Programming", "Functions and Subprograms"],
+    "Question": {
+      "content": "What is the value of FUNC(X,Y)?",
+      "type": "OBJ",
+      "options": [
+        "12.100011",
+        "13.0",
+        "11.11100",
+        "11.11000"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "11.11100"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Function Calls</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Look at the Function Definition</strong><br>\n    The FUNCTION is defined as:<br>\n    <code>FUNCTION FUNC(A, B)</code><br>\n    <code>FUNC = A + B</code><br>\n    This function simply adds its two arguments.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Understand the Function Call</strong><br>\n    In the main program:<br>\n    <code>PRINT *, FUNC(X,Y)</code><br>\n    This calls FUNC with:<br>\n    • A = X = 1.2345<br>\n    • B = Y = 9.8765\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Calculate FUNC(X,Y)</strong><br>\n    Inside the function:<br>\n    FUNC = A + B<br>\n    FUNC = 1.2345 + 9.8765<br>\n    FUNC = <strong>11.1110</strong> (same as Question 24)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Why Same as Sum?</strong><br>\n    Both calculations are identical:<br>\n    • <code>Sum = X + Y</code> in main program<br>\n    • <code>FUNC = A + B</code> in function (where A=X, B=Y)<br>\n    They should give the same result: 11.11100\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> FUNC(X,Y) = 11.11100\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 26",
+    "topic": ["Fortran Programming", "Functions and Subprograms", "Variable Scope"],
+    "Question": {
+      "content": "What are the values of A and B respectively?",
+      "type": "OBJ",
+      "options": [
+        "12.10011, 13.0",
+        "11.11000, 12.10011",
+        "0.0",
+        "13.0,13.0",
+        "12.10011, 12.10011"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Variable Scope in Fortran</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Examine the Main Program</strong><br>\n    Main program variables:<br>\n    • X = 1.2345<br>\n    • Y = 9.8765<br>\n    • Sum = X + Y<br>\n    • <strong>No A or B declared here!</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Where Are A and B Defined?</strong><br>\n    • A and B are <strong>parameters</strong> of FUNCTION FUNC<br>\n    • They exist only <strong>inside</strong> the function<br>\n    • In the main program, A and B are <strong>undefined variables</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: What Happens with Undefined Variables?</strong><br>\n    In Fortran:<br>\n    • Using undefined variables gives <strong>unpredictable results</strong><br>\n    • Often default to <strong>0.0</strong> or contain garbage values<br>\n    • The safest assumption is <strong>0.0</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> A and B are both 0.0 (undefined in main program)\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 27",
+    "topic": ["Fortran Programming", "Statement Types"],
+    "Question": {
+      "content": "The following is an executable statement in FORTRAN:",
+      "type": "OBJ",
+      "options": [
+        "FORMAT statement",
+        "Continue statement",
+        "Dimensional statement",
+        "Integer statement",
+        "End statement"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Continue statement"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Executable vs. Non-executable Statements</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: What is Executable?</strong><br>\n    Executable statements cause actions when program runs.<br>\n    Non-executable statements provide info to compiler.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Analyze Each Option</strong><br>\n    a) FORMAT → <strong>Non-executable</strong>: Defines I/O format<br>\n    b) Continue → <strong>Executable</strong>: 'Do nothing' command that executes<br>\n    c) Dimensional → <strong>Non-executable</strong>: Declares array sizes<br>\n    d) Integer → <strong>Non-executable</strong>: Declares variable types<br>\n    e) End → <strong>Non-executable</strong>: Marks program end for compiler\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> Continue statement is executable\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 28",
+    "topic": ["Fortran Programming", "Loops"],
+    "Question": {
+      "content": "How many times will the loop segment controlled by the statement \"DO 100 K = 2, 74, 8\" be executed?",
+      "type": "OBJ",
+      "options": [
+        "13",
+        "7",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "10"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Calculating DO Loop Iterations</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Understand the DO Loop Syntax</strong><br>\n    <code>DO 100 K = 2, 74, 8</code> means:<br>\n    • Start at K = 2<br>\n    • End when K ≤ 74<br>\n    • Increment by 8 each time\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: List the K Values</strong><br>\n    K will take these values:<br>\n    2, 10, 18, 26, 34, 42, 50, 58, 66, 74<br>\n    (74 is included because the loop continues while K ≤ 74)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Count the Values</strong><br>\n    Let's count: 2 (1), 10 (2), 18 (3), 26 (4), 34 (5),<br>\n    42 (6), 50 (7), 58 (8), 66 (9), 74 (10)<br>\n    Total: <strong>10 iterations</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Use the Formula</strong><br>\n    Number of iterations = \\(\\frac{\\text{end - start}}{\\text{step}} + 1\\)<br>\n    \\(\\frac{74 - 2}{8} + 1\\)<br>\n    \\(\\frac{72}{8} + 1\\)<br>\n    \\(9 + 1 = 10\\)\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> The loop executes 10 times\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 29",
+    "topic": ["Fortran Programming", "Arrays", "Input/Output"],
+    "Question": {
+      "content": "Given an array A(10), B (11,9). How many values will be stored in the array when READ(10,100)(B(J,K) K = 1,5,2) J = 2,9) is executed?",
+      "type": "OBJ",
+      "options": [
+        "99",
+        "21",
+        "24",
+        "109",
+        "15"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "24"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Counting Implied DO Loop Values</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Analyze the READ Statement</strong><br>\n    <code>READ(10,100)(B(J,K) K = 1,5,2) J = 2,9)</code><br>\n    This has <strong>nested implied DO loops</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Inner Loop (K values)</strong><br>\n    <code>K = 1,5,2</code> means:<br>\n    • Start: K = 1<br>\n    • End: K ≤ 5<br>\n    • Step: 2<br>\n    K values: 1, 3, 5<br>\n    <strong>3 values</strong> for each J\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Outer Loop (J values)</strong><br>\n    <code>J = 2,9</code> means:<br>\n    • Start: J = 2<br>\n    • End: J ≤ 9<br>\n    • Step: 1 (default)<br>\n    J values: 2, 3, 4, 5, 6, 7, 8, 9<br>\n    <strong>8 values</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Calculate Total Values</strong><br>\n    Total = (J iterations) × (K iterations per J)<br>\n    Total = 8 × 3 = <strong>24</strong>\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Final Answer:</strong> 24 values will be stored\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 30",
+    "topic": ["Fortran Programming", "Flowcharts", "Algorithm Design"],
+    "Question": {
+      "content": "Use the blank space below to draw a flow chart for a program that will calculate and print Simple Interest and Amount when Principal, Rate and Time are read in. The program should terminate when a negative value is encountered for either Principal, Rate, or Time.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "img",
+      "content": "data:image/jpg;base64,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8Px/zJnxE/8ACYnph/4KUeAAf+RK+Ih+nhiagD1jTf2Y/CumftIap8aobjUT4s1HT102aFplNqIgkaAhduc4iXnd61646LKpRwGVhgg9CK+Sh/wUp8Af9CT8Rf8AwmZqUf8ABSfwCT/yJXxFHv8A8IxPQBP43/4Jy/D/AFfxde+JfB+t+JPhlqd8267Xwpfm2glb18roO/TA5PFdZ8DP2Ivh98EfFMvixG1Pxb4zkXb/AMJB4lujd3MYPUR54TvyBnBxnFcd/wAPJvh+evgv4if+EvPTT/wUp8ADp4K+In/hMT0AezfGL9njw78a/E3gHW9cur6C68GaoNW09LSRVSSYFCBICpyvyDgY6mvUBmvkkf8ABSjwCevgv4iD/uWJ6f8A8PJfAH/QmfEQ/wDcsT0AfWQ607dXyO3/AAUi8FSsqWXw++JV/cMcLDD4ZlDMfxIrNvviX+0f+0pD/ZngrwO/wW8L3XyT+JvFLq2piM8MYLUcq2OhcDr170AO/bB+IF58cPFWn/s3eALkz6trMiS+LNStmymkaYpBkSRhnEkg4C9cHtmvrTwr4a0/wd4b0vQtKgS103TbaO0toUGFSNFCqB+AFeefs/fs3eF/2ePDk1jovn6jq9/J9o1XXtQfzLzUZzkmSV/qTgDgV6xQAlLRRQAmeaQmlxRigApaKKACiikzigAo70UtACAUtFFABSZpaTFAAaQAGnUUAFFFFABSGlpOtABwRik6HFLiloAQ8UtFFABSd6WigBM0YzRS0AJiloooAKQ9KWkPSgBo60+mDrT6ACiiigAooooAohznipPP2imiMqaDCW5oAVZyTUzPhQahSIg9KmcfJQA7tSg0lKCKAF6UtFJnNAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUlLQAUUUUAFFFFABRRRQAUlLRQAm0UhUU6igBMY6UClooATFGBS0UAJgUYpaKAExRgUtFACbRQBg0tFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUg6UtABRRRQAUUUUAFFFFABRRRQAUUUUAJQelLSHpQA0dafTR1p1ABRRRQAUUUUAJtFGBRRQAYFI4zRRQAgpQM0UUAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBKBRRQAtFFFABSHiiigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkPSiigBo60+iigAooooAKKKKAP//Z"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Flowchart for Simple Interest Program</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Answer from Answer Key Image</strong><br>\n    The answer key shows a flowchart with:<br>\n    • START → READ P, R, T → Decision diamond<br>\n    • If YES (negative): STOP<br>\n    • If NO: Calculate I = PRT/100 → A = I + P → PRINT I, A<br>\n    • Arrow returns to READ step\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Flowchart Components</strong><br>\n    A proper flowchart should include:<br>\n    1. <strong>Oval</strong>: START and STOP<br>\n    2. <strong>Parallelogram</strong>: READ and PRINT<br>\n    3. <strong>Rectangle</strong>: Calculations (I = PRT/100, A = I + P)<br>\n    4. <strong>Diamond</strong>: Decision (P<0 or R<0 or T<0?)<br>\n    5. <strong>Arrows</strong>: Flow direction\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Key Features</strong><br>\n    • The program runs in a <strong>loop</strong><br>\n    • Checks <strong>all three</strong> inputs for negativity<br>\n    • Uses correct formula: \\(I = \\frac{P × R × T}{100}\\)<br>\n    • Calculates Amount: \\(A = P + I\\)<br>\n    • Prints results before looping back\n  </div>\n\n  <div style='background: var(--cAns); color: var(--cAnsBg); padding: 12px; border-radius: 6px; border-left: 4px solid var(--greenText); margin-top: 15px;'>\n    <strong>✓ Flowchart Description:</strong><br>\n    See the image for the complete flowchart. The answer key shows the basic structure though some symbols may be simplified.\n  </div>\n</div>"
+    }
+  }
+]
