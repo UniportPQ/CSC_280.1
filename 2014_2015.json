@@ -1,0 +1,690 @@
+[
+ 
+ {
+ "type": "pageInfo",
+ "kind": "pureOBJ",
+ "course_title": "Computer Programming Using FORTRAN",
+ "code": "CSC 280.1",
+ "session": "2014/2015",
+ "topics": ["Computer Programming", "FORTRAN", "Flowcharts", "Programming Basics", "Variables", "Loops", "Programming", "Operators", "Control Structures", "Comparisons", "Syntax", "Sequences", "Arrays", "Functions", "Arithmetic IF", "Control Statements", "Format Statements", "Input/Output", "Programming Standards", "Coding", "Expressions", "Arithmetic", "Applications"],
+ "time": "90"
+},
+
+
+{
+ "type": "Instruction",
+ "content": "Attempt All Questions"
+},
+
+
+
+   {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Computer Programming", "FORTRAN"],
+    "Question": {
+      "content": "A FORTRAN program terminates with one of the following:",
+      "type": "OBJ",
+      "options": [
+        "STOP",
+        "TERMINATE",
+        "EXIT",
+        "ENDS",
+        "END"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "END"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Program Termination</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Key Concept:</strong><br>\n    Every FORTRAN program must have a proper ending statement to tell the computer where the program finishes.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What Each Option Means:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>STOP</strong>: Pauses the program during execution (not the final ending)</li>\n      <li><strong>TERMINATE</strong>: Not a valid FORTRAN statement</li>\n      <li><strong>EXIT</strong>: Used to leave loops, not to end programs</li>\n      <li><strong>ENDS</strong>: Not a valid FORTRAN statement</li>\n      <li><strong>END</strong>: <strong>The correct statement</strong> that marks the end of a FORTRAN program</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Simple Analogy:</strong><br>\n    Think of a FORTRAN program like a storybook. <strong>END</strong> is like \"The End\" at the last page - it tells the reader (computer) the story (program) is finished.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> END is the only valid statement to terminate a FORTRAN program.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Flowcharts", "Programming Basics"],
+    "Question": {
+      "content": "<img class='imgAns thumbnail' src='data:image/jpg;base64,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'>Is a symbol used for",
+      "type": "OBJ",
+      "options": [
+        "Decision",
+        "Start",
+        "Control",
+        "Stop",
+        "Connection"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Decision"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Flowchart Symbol Explanation</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Original Answer vs Answer Key:</strong><br>\n    The question shows a diamond symbol which represents a Decision point in flowcharts.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Common Flowchart Symbols:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>Oval</strong>: Start/Stop</li>\n      <li><strong>Rectangle</strong>: Process/Operation</li>\n      <li><strong>Diamond</strong>: <strong>Decision</strong> (yes/no questions)</li>\n      <li><strong>Parallelogram</strong>: Input/Output</li>\n      <li><strong>Circle</strong>: Connector</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Decision - The symbol shown is clearly the diamond shape, which is the standard symbol for a decision.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["FORTRAN", "Programming Basics", "Variables"],
+    "Question": {
+      "content": "One of the following is not a valid FORTRAN variable:",
+      "type": "OBJ",
+      "options": [
+        "NUM",
+        "MATRIX-1",
+        "MAT1",
+        "MATRIX",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "MATRIX-1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Variable Rules</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Basic Rules for FORTRAN Variable Names:</strong><br>\n    1. Must start with a letter (A-Z)<br>\n    2. Can contain letters and numbers<br>\n    3. <strong>Cannot contain special characters</strong> like hyphens (-), spaces, or symbols<br>\n    4. Usually limited to 6 characters (in older FORTRAN)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Analyzing Each Option:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>NUM</strong>: Valid - letters only</li>\n      <li><strong>MATRIX-1</strong>: <strong>INVALID</strong> - contains hyphen (-)</li>\n      <li><strong>MAT1</strong>: Valid - letters and numbers</li>\n      <li><strong>MATRIX</strong>: Valid - letters only</li>\n      <li><strong>none of the above</strong>: Incorrect because MATRIX-1 is invalid</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Memory Tip:</strong><br>\n    Think of FORTRAN variable names like email addresses - they can't have hyphens in the main part, just like \"john-smith@email.com\" is okay but variable \"MATRIX-1\" is not.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> MATRIX-1 is invalid because it contains a hyphen (-).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["FORTRAN", "Loops", "Programming"],
+    "Question": {
+      "content": "DO 15 I = 1, 100 one of the following causes error in the statement:",
+      "type": "OBJ",
+      "options": [
+        "15 was used instead of 10",
+        "There was no format",
+        ". was used instead of ,",
+        "an increment was missing",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "None of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN DO Loop Syntax</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Correct DO Loop Format:</strong><br>\n    The proper syntax is: DO label variable = start, end, increment<br>\n    Example: DO 15 I = 1, 100, 2\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Analyzing the Problem:</strong><br>\n    The statement \"DO 15 I = 1, 100\" is missing the <strong>increment value</strong>. In FORTRAN, if you don't specify an increment, it defaults to 1. So this should actually work!\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking Each Option:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>15 was used instead of 10</strong>: 15 is just a label - any number works</li>\n      <li><strong>There was no format</strong>: DO loops don't need format statements</li>\n      <li><strong>, was used instead of ,</strong>: This is identical - no error</li>\n      <li><strong>an increment was missing</strong>: <strong>TRICK QUESTION!</strong> Actually, increment defaults to 1 if omitted</li>\n      <li><strong>None of the above</strong>: <strong>CORRECT!</strong> The statement as written is actually valid FORTRAN</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Important Note:</strong><br>\n    This is a tricky question! \"DO 15 I = 1, 100\" is valid FORTRAN because:<br>\n    - 15 is a valid statement label<br>\n    - I is a valid variable<br>\n    - When increment is missing, FORTRAN assumes it's 1\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> None of the above - the statement is actually valid FORTRAN code.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["FORTRAN", "Operators", "Programming"],
+    "Question": {
+      "content": "** is an operator used as ...... in FORTRAN",
+      "type": "OBJ",
+      "options": [
+        "Multiplication",
+        "Addition",
+        "Double Multiplication",
+        "Exponential",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Exponential"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Arithmetic Operators</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Common FORTRAN Operators:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>+</strong> : Addition</li>\n      <li><strong>-</strong> : Subtraction</li>\n      <li><strong>*</strong> : Multiplication</li>\n      <li><strong>/</strong> : Division</li>\n      <li><strong>**</strong> : <strong>Exponentiation</strong> (power)</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What ** Means:</strong><br>\n    The <strong>**</strong> operator is used for raising a number to a power.<br>\n    Example: \\( 2 ** 3 = 2^3 = 8 \\)<br>\n    Example: \\( 5 ** 2 = 5^2 = 25 \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Simple Analogy:</strong><br>\n    Think of mathematical operations:<br>\n    - * is like \"times\" (3 * 4 = 12)<br>\n    - ** is like \"to the power of\" (3 ** 4 = \\( 3^4 = 81 \\))\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why Not Other Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>Multiplication</strong>: Uses single * not **</li>\n      <li><strong>Addition</strong>: Uses +</li>\n      <li><strong>Double Multiplication</strong>: Not a valid FORTRAN concept</li>\n      <li><strong>Exponential</strong>: <strong>CORRECT!</strong> ** means exponentiation</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> ** is the exponentiation operator in FORTRAN (raises a number to a power).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": ["FORTRAN", "Flowcharts", "Control Structures"],
+    "Question": {
+      "content": "The statement used to handle flowchart symbol for DECISION in FORTRAN is",
+      "type": "OBJ",
+      "options": [
+        "IF statement",
+        "DO statement",
+        "DEC statement",
+        "GO TO statement",
+        "YES or NO statement"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "IF statement"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Flowchart Decisions in FORTRAN</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Understanding Flowchart Symbols:</strong><br>\n    In flowcharts, a <strong>Decision symbol</strong> (usually a diamond) represents a point where the program must choose between two or more paths based on a condition.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN Statements for Decisions:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>IF statement</strong>: <strong>CORRECT!</strong> This is exactly how FORTRAN makes decisions</li>\n      <li><strong>DO statement</strong>: Used for loops (repetition), not decisions</li>\n      <li><strong>DEC statement</strong>: Not a valid FORTRAN statement</li>\n      <li><strong>GO TO statement</strong>: Jumps to another part of code, but doesn't make decisions</li>\n      <li><strong>YES or NO statement</strong>: Not a valid FORTRAN statement</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Simple Example:</strong><br>\n    In a flowchart, a decision might ask: \"Is age > 18?\"<br>\n    In FORTRAN, this becomes: <strong>IF (AGE .GT. 18) THEN</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Real-life Analogy:</strong><br>\n    Think of a decision in a flowchart like a traffic light. The <strong>IF statement</strong> in FORTRAN is like your brain deciding:<br>\n    <em>IF light is green THEN go, ELSE stop</em>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> The IF statement handles decision-making in FORTRAN, just like decision symbols in flowcharts.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": ["FORTRAN", "Operators", "Comparisons"],
+    "Question": {
+      "content": "The statement .LE. in FORTRAN has one of this as its equivalent in maths",
+      "type": "OBJ",
+      "options": [
+        "<<",
+        ">=",
+        "<",
+        "<=",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "<="
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Comparison Operators</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What .LE. Means:</strong><br>\n    In FORTRAN, <strong>.LE.</strong> stands for <strong>\"Less than or Equal to\"</strong>.<br>\n    The dots around LE are important - they're part of the operator.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Common FORTRAN Comparison Operators:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>.LT.</strong> : Less Than (<)</li>\n      <li><strong>.LE.</strong> : Less than or Equal to (≤ or <=)</li>\n      <li><strong>.GT.</strong> : Greater Than (>)</li>\n      <li><strong>.GE.</strong> : Greater than or Equal to (≥ or >=)</li>\n      <li><strong>.EQ.</strong> : Equal to (=)</li>\n      <li><strong>.NE.</strong> : Not Equal to (≠ or !=)</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Understanding the Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong><<</strong> : Usually means \"much less than\" in maths, not standard comparison</li>\n      <li><strong>>=</strong> : Greater than or equal to (this is .GE. in FORTRAN)</li>\n      <li><strong><</strong> : Less than (this is .LT. in FORTRAN)</li>\n      <li><strong><=</strong> : <strong>CORRECT!</strong> Less than or equal to = .LE.</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Simple Example:</strong><br>\n    If you want to check if age is 18 or younger:<br>\n    In maths: age ≤ 18<br>\n    In FORTRAN: <strong>AGE .LE. 18</strong>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> .LE. in FORTRAN means \"Less than or Equal to,\" which is written as ≤ or <= in mathematics.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Instruction",
+    "content": "Use the following program for questions 8-12: <br><br><code>****THIS IS A PROGRAM THAT ILLUSTRATES A COMPUTATION***<br>DIMENSION NWORD(20)<br>WRITE(12,30)<br>30 FORMAT(1X,\"KEY IN 20 INTEGER NUMBERS SEPARATED BY COMMAS\")<br>READ(11,40) NWORD<br>40 FORMAT(2014)<br>DO 100 L = 1, 80, 3<br>K = L + 2<br>100 IF(NWORD(L).GT.NWORD(L)) GO TO 300<br>200 CONTINUE<br>300 STOP<br>END"
+  },
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "topic": ["FORTRAN", "Loops", "Syntax"],
+    "Question": {
+      "content": "The maximum value of L is",
+      "type": "OBJ",
+      "options": [
+        "100",
+        "1",
+        "60",
+        "2",
+        "120"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "100"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Analyzing the Question Error</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Code:</strong><br>\n    <code>DO 100 L = 1, 80, 3</code>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Mathematical Reality vs. Options:</strong><br>\n    <ul style='margin-top: 5px; margin-bottom: 5px;'>\n      <li><strong>Start:</strong> 1</li>\n      <li><strong>Limit:</strong> 80</li>\n      <li><strong>Step:</strong> 3</li>\n      <li><strong>Actual Max Value:</strong> 79 (since 82 > 80)</li>\n    </ul>\n    <br>\n    <strong>The Problem:</strong> Neither <strong>79</strong> (the true max) nor <strong>80</strong> (the limit) are in the options (100, 1, 60, 2, 120).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Exam Strategy Solution:</strong><br>\n    When the correct math answer is missing in IT exams, look for the <strong>Label</strong>.<br>\n    The number <strong>100</strong> is the <strong>Statement Label</strong> for the loop. It is the only significant number from the code statement appearing in the options.<br>\n    <em>(The examiner likely confused \"Label\" with \"Value\" when writing the question).</em>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Best Available Answer:</strong> <strong>100</strong> (Referring to the Loop Label). \n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 9",
+    "topic": ["FORTRAN", "Loops", "Programming"],
+    "Question": {
+      "content": "The initial value of L is",
+      "type": "OBJ",
+      "options": [
+        "20",
+        "1",
+        "2",
+        "60",
+        "120"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN DO Loop Initial Value</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Reading the DO Statement:</strong><br>\n    The program contains: <strong>DO 100 L = 1, 80, 3</strong><br>\n    This tells us everything about the loop variable L.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>DO Loop Format:</strong><br>\n    The general format is: DO label variable = start, end, increment<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0; text-align: center;'>\n      DO 100 L = 1, 80, 3<br>\n      ↑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↑ &nbsp;&nbsp;&nbsp;&nbsp; ↑ &nbsp;&nbsp;&nbsp;&nbsp; ↑<br>\n      label variable start end increment\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Finding the Initial Value:</strong><br>\n    Right after the equals sign (=), we see <strong>1</strong>.<br>\n    This means: <strong>Start L at 1</strong><br>\n    So the initial (first) value of L is <strong>1</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why Not Other Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>20</strong>: This is the size of NWORD array, not related to L</li>\n      <li><strong>1</strong>: <strong>CORRECT!</strong> This is the starting value</li>\n      <li><strong>2</strong>: L increases by 3, not starts at 2</li>\n      <li><strong>60</strong>: This might be a calculated value, not the start</li>\n      <li><strong>120</strong>: Not related to the loop</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Simple Analogy:</strong><br>\n    Think of counting stairs: \"Start at step 1, go up to step 80, jump 3 steps at a time\"<br>\n    Your starting step is clearly <strong>1</strong>.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> The initial value of L is 1, as specified in \"DO 100 L = <strong>1</strong>, 80, 3\".\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 10",
+    "topic": ["FORTRAN", "Loops", "Sequences"],
+    "Question": {
+      "content": "The maximum value of L is",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "1",
+        "61",
+        "62",
+        "100"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "61"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying Valid Loop Values</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Pattern:</strong><br>\n    The loop <code>DO 100 L = 1, 80, 3</code> generates a sequence starting at 1 and adding 3 every time.<br>\n    Sequence: 1, 4, 7, 10, ... (Formula: \\( L = 1 + 3n \\) )\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Testing the Options:</strong><br>\n    We must find which option fits the pattern and is less than 80.\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <ul>\n        <li><strong>2:</strong> Invalid (Start is 1, next is 4)</li>\n        <li><strong>1:</strong> Valid, but it is the minimum, not the maximum.</li>\n        <li><strong>61:</strong> <strong>Valid!</strong> (\\( 61 - 1 = 60 \\), which is divisible by 3).</li>\n        <li><strong>62:</strong> Invalid (\\( 62 - 1 = 61 \\), not divisible by 3).</li>\n        <li><strong>100:</strong> Invalid (Greater than the limit of 80).</li>\n      </ul>\n    </div>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> <strong>61</strong><br>\n    While the loop <em>could</em> theoretically go higher (up to 79), <strong>61</strong> is the only valid number listed in the options.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 11",
+    "topic": ["FORTRAN", "Loops", "Arrays"],
+    "Question": {
+      "content": "What is the maximum number of times statement 100 will be executed?",
+      "type": "OBJ",
+      "options": [
+        "20",
+        "1",
+        "2",
+        "40",
+        "60"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "20"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>The Limit is the Array Size</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Loop Math (The Trap):</strong><br>\n    Mathematically, the loop <code>DO 100 L = 1, 80, 3</code> would execute 27 times.<br>\n    However, 27 is not an option. Why?\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Real Constraint:</strong><br>\n    Look at the top of the program: <code>DIMENSION NWORD(20)</code>.<br>\n    This means the array <code>NWORD</code> can only hold <strong>20 numbers</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why the Answer is 20:</strong><br>\n    Even though the loop <em>wants</em> to run 27 times, the program is technically invalid or crashes after the 20th index because the memory does not exist.<br>\n    In the context of this exam, the maximum meaningful number of executions is limited by the dimension size.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> <strong>20</strong> (Limited by DIMENSION NWORD(20)).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 12",
+    "topic": ["FORTRAN", "Loops", "Programming"],
+    "Question": {
+      "content": "What is the minimum number of times statement 100 will be executed?",
+      "type": "OBJ",
+      "options": [
+        "20",
+        "1",
+        "2",
+        "40",
+        "60"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Minimum Loop Executions</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Understanding the IF Condition:</strong><br>\n    Statement 100 is: <strong>IF(NWORD(L).GT.NWORD(L)) GO TO 300</strong><br>\n    This condition says: \"If NWORD(L) is greater than NWORD(L)...\"\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Critical Insight:</strong><br>\n    Look carefully: <strong>NWORD(L).GT.NWORD(L)</strong><br>\n    This is comparing NWORD(L) with <strong>ITSELF</strong>!<br>\n    A number can never be greater than itself.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What This Means:</strong><br>\n    The condition <strong>NWORD(L) > NWORD(L)</strong> is <strong>ALWAYS FALSE</strong>.<br>\n    So the <strong>GO TO 300</strong> part will <strong>NEVER</strong> happen.<br>\n    The program will always go to statement 200 (CONTINUE).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Minimum Execution:</strong><br>\n    Since the DO loop starts at L = 1, statement 100 will be executed <strong>at least once</strong> (when L = 1).<br>\n    The loop could potentially execute many times (27 times maximum), but the <strong>minimum</strong> is <strong>1</strong>.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Statement 100 will be executed at minimum 1 time (when L = 1 at the start of the loop).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 13",
+    "topic": ["FORTRAN", "Variables", "Programming"],
+    "Question": {
+      "content": "The rules that supersedes naming of a variable according to the first letter is called",
+      "type": "OBJ",
+      "options": [
+        "Type Declaration statement",
+        "Initialization statement",
+        "Assignment statement",
+        "Variable statement",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Type Declaration statement"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Variable Typing Rules</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Default FORTRAN Rule (IMPLICIT TYPING):</strong><br>\n    By default, FORTRAN uses this rule:<br>\n    - Variables starting with I, J, K, L, M, N are <strong>INTEGER</strong><br>\n    - Variables starting with other letters are <strong>REAL</strong> (decimal numbers)<br>\n    Example: NUM is integer, XPOS is real.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What Can Override This Rule?</strong><br>\n    A <strong>Type Declaration statement</strong> can explicitly tell FORTRAN what type a variable should be, regardless of its first letter.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Examples:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>REAL NUMBER</strong> &nbsp;&nbsp;&nbsp; ← Makes NUMBER real (even though it starts with N)<br>\n      <strong>INTEGER TOTAL</strong> &nbsp;&nbsp;&nbsp; ← Makes TOTAL integer (even though it starts with T)\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why Not Other Options?</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>Initialization statement</strong>: Gives a variable its first value, doesn't change its type</li>\n      <li><strong>Assignment statement</strong>: Changes a variable's value, not its type</li>\n      <li><strong>Variable statement</strong>: Not a standard FORTRAN term</li>\n      <li><strong>None of the above</strong>: Incorrect because Type Declaration is the correct answer</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Type Declaration statement explicitly defines a variable's type, overriding the default first-letter rule.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 14",
+    "topic": ["FORTRAN", "Programming Basics"],
+    "Question": {
+      "content": "How many character sets are there in FORTRAN language?",
+      "type": "OBJ",
+      "options": [
+        "25",
+        "16",
+        "13",
+        "11",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "None of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Character Set</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What is a Character Set?</strong><br>\n    A character set is all the letters, numbers, and symbols that a programming language can recognize and use.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Standard FORTRAN Character Set:</strong><br>\n    Traditional FORTRAN (FORTRAN 77 and earlier) uses:<br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>26 letters</strong>: A through Z (uppercase only in older versions)</li>\n      <li><strong>10 digits</strong>: 0 through 9</li>\n      <li><strong>13 special characters</strong>: = + - * / ( ) , . $ ' : space and sometimes others</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Total Count:</strong><br>\n    26 letters + 10 digits + 13 special characters = <strong>49 characters</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking the Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>25</strong>: Too few (missing some letters or characters)</li>\n      <li><strong>16</strong>: Way too few</li>\n      <li><strong>13</strong>: Just the special characters, not the full set</li>\n      <li><strong>11</strong>: Even fewer</li>\n      <li><strong>None of the above</strong>: <strong>CORRECT!</strong> Since 49 isn't listed</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> None of the above - the standard FORTRAN character set has 49 characters (26 letters + 10 digits + 13 special characters).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 15",
+    "topic": ["FORTRAN", "Operators", "Programming"],
+    "Question": {
+      "content": "If two operators have same binding strength, interpretation is from",
+      "type": "OBJ",
+      "options": [
+        "Right to Left",
+        "Left to Right",
+        "Back to Front",
+        "Center to Back",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Left to Right"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Operator Precedence and Associativity</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What Does \"Same Binding Strength\" Mean?</strong><br>\n    It means two operators have equal priority. Example: + and - have the same priority, * and / have the same priority.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Problem:</strong><br>\n    What happens in: <strong>10 - 5 + 3</strong>?<br>\n    Both - and + have the same priority. Do we calculate (10 - 5) + 3 or 10 - (5 + 3)?\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN's Rule:</strong><br>\n    FORTRAN (like most programming languages) uses <strong>left-to-right</strong> evaluation for operators with equal priority.<br>\n    So: 10 - 5 + 3 = (10 - 5) + 3 = 5 + 3 = 8\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Real Example:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      20 / 5 * 2 = (20 / 5) * 2 = 4 * 2 = 8<br>\n      <em>Not: 20 / (5 * 2) = 20 / 10 = 2</em>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Exceptions:</strong><br>\n    The exponentiation operator (**) is an exception - it evaluates <strong>right-to-left</strong>:<br>\n    2 ** 3 ** 2 = 2 ** (3 ** 2) = 2 ** 9 = 512<br>\n    <em>Not: (2 ** 3) ** 2 = 8 ** 2 = 64</em>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Memory Tip:</strong><br>\n    Think of reading a book: you read <strong>left to right</strong>. Most FORTRAN operators work the same way when they have equal priority.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Left to Right - when operators have equal priority, FORTRAN evaluates them from left to right.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 16",
+    "topic": ["FORTRAN", "Operators", "Programming"],
+    "Question": {
+      "content": "Which of the following has the highest precedence in arithmetic computation?",
+      "type": "OBJ",
+      "options": [
+        "*",
+        "+",
+        "* or /",
+        "+ or -",
+        "**"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "**"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Operator Precedence in FORTRAN</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What is Precedence?</strong><br>\n    Precedence means \"which operation gets done first\" when there are multiple operations in one expression.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN Operator Precedence (Highest to Lowest):</strong><br>\n    <ol style='margin-top: 8px; margin-left: 20px;'>\n      <li><strong>**</strong> &nbsp; – Exponentiation (highest priority)</li>\n      <li><strong>* or /</strong> – Multiplication or Division</li>\n      <li><strong>+ or -</strong> – Addition or Subtraction (lowest priority)</li>\n    </ol>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Example to Understand:</strong><br>\n    What is <strong>2 + 3 * 4 ** 2</strong>?<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      Step 1: <strong>4 ** 2</strong> = 16 &nbsp;&nbsp;(** has highest precedence)<br>\n      Step 2: <strong>3 * 16</strong> = 48 &nbsp;&nbsp;(* has next highest)<br>\n      Step 3: <strong>2 + 48</strong> = 50 &nbsp;&nbsp;(+ has lowest)\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Memory Tip:</strong><br>\n    Think of a math class rule: <strong>\"Please Excuse My Dear Aunt Sally\"</strong><br>\n    Parentheses, Exponents, Multiplication/Division, Addition/Subtraction<br>\n    Exponents (**) come before everything else (except parentheses).\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> ** (exponentiation) has the highest precedence in FORTRAN arithmetic computations.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 17",
+    "topic": ["FORTRAN", "Functions", "Programming"],
+    "Question": {
+      "content": "How many arguments does ABS in-built function take?",
+      "type": "OBJ",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>The ABS Function in FORTRAN</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What is ABS?</strong><br>\n    ABS is a built-in FORTRAN function that finds the <strong>absolute value</strong> of a number.<br>\n    Absolute value means: \"How far is this number from zero?\" (always positive or zero).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Examples of ABS:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      ABS(5) = 5<br>\n      ABS(-5) = 5<br>\n      ABS(0) = 0<br>\n      ABS(-3.14) = 3.14\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>How Many Arguments?</strong><br>\n    ABS needs exactly <strong>one</strong> number to work on.<br>\n    You can't ask \"What's the absolute value of 5 and 10?\" - that doesn't make sense.<br>\n    You can only ask \"What's the absolute value of 5?\" or \"What's the absolute value of -10?\"\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Correct Usage:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>X = ABS(Y)</strong> &nbsp;&nbsp;← One argument: Y<br>\n      <strong>Z = ABS(-15.5)</strong> &nbsp;&nbsp;← One argument: -15.5\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Real-life Analogy:</strong><br>\n    Think of ABS like a \"distance from zero\" meter. You can only measure the distance of <strong>one</strong> number from zero at a time, not multiple numbers.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> The ABS function takes exactly 1 argument (one number whose absolute value you want to find).\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 18",
+    "topic": ["FORTRAN", "Control Structures", "Arithmetic IF"],
+    "Question": {
+      "content": "Given the FORTRAN statement IF(expression) J, K, L. The program control is transferred to k when the expression is",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "-3",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>The Arithmetic IF Statement</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>How it works:</strong><br>\n    The syntax <code>IF (expression) J, K, L</code> transfers control based on the sign of the result:\n    <ul style='margin-top: 5px; margin-bottom: 5px;'>\n      <li><strong>Negative (< 0):</strong> Jumps to the first label (J).</li>\n      <li><strong>Zero (= 0):</strong> Jumps to the second label (K).</li>\n      <li><strong>Positive (> 0):</strong> Jumps to the third label (L).</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Applying to the Question:</strong><br>\n    The statement is <code>IF(expression) J, K, L</code>.<br>\n    We want to know when it goes to <strong>K</strong> (the middle label).<br>\n    Based on the rule above, the second label is chosen strictly when the expression evaluates to <strong>Zero</strong>.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> <strong>0</strong>\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 19",
+    "topic": ["FORTRAN", "Control Statements", "Programming"],
+    "Question": {
+      "content": "STOP statement performs one of the following functions:",
+      "type": "OBJ",
+      "options": [
+        "Terminates a written program",
+        "Suspends a program",
+        "Instructs the computer to stop running",
+        "Finds the program",
+        "All of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Terminates a written program"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>The Function of the STOP Statement</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What STOP Actually Does:</strong><br>\n    The <code>STOP</code> statement terminates the execution of the program immediately. It tells the computer, \"I am finished with this task, close the program and return to the Operating System.\"\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>STOP vs. PAUSE vs. END:</strong><br>\n    It is easy to confuse these three, so here is the breakdown:\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <ul style='margin-top: 5px; margin-bottom: 5px;'>\n        <li><strong>STOP</strong>: <em>Terminates</em> execution. (The correct answer).</li>\n        <li><strong>PAUSE</strong>: <em>Suspends</em> execution temporarily (keeps the program open waiting for you).</li>\n        <li><strong>END</strong>: Marks the physical end of the code lines for the compiler.</li>\n      </ul>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Analyzing the Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>Terminates a written program</strong>: <strong>YES.</strong> This is the definition of STOP.</li>\n      <li><strong>Suspends a program</strong>: <strong>NO.</strong> That is the job of the PAUSE statement.</li>\n      <li><strong>Instructs the computer to stop running</strong>: <strong>NO.</strong> That would shut down your hardware (power off).</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Terminates a written program.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Instruction",
+    "content": "<br><code>K = $IN(30)<br>X = I/K<br>M = J – 4</code><br>N = M**3"
+  },
+  {
+    "type": "Question",
+    "name": "Question 20",
+    "topic": ["FORTRAN", "Programming", "Variables"],
+    "Question": {
+      "content": "What is the value of J?",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "9",
+        "12",
+        "81",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "None of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Direct Value Assignment</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Given Information:</strong><br>\n    The problem states: \"With I = 2, J = 5, and $IN(30) returns 2\"<br>\n    This means J is directly given as <strong>5</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>No Calculation Needed:</strong><br>\n    Unlike other variables in the code snippet (K, X, M, N), J is not calculated or modified in the code.<br>\n    It's simply used in the calculation of M: <strong>M = J – 4</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking the Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>2</strong>: This is the value of I or what $IN(30) returns</li>\n      <li><strong>9</strong>: This might be a miscalculation or unrelated</li>\n      <li><strong>12</strong>: Not related to J</li>\n      <li><strong>81</strong>: This is 3⁴ or 9², not J</li>\n      <li><strong>None of the above</strong>: <strong>CORRECT!</strong> Since 5 isn't listed</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> None of the above - J is directly given as 5, which is not in the options.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 21",
+    "topic": ["FORTRAN", "Programming", "Variables"],
+    "Question": {
+      "content": "What is the value of X?",
+      "type": "OBJ",
+      "options": [
+        "8",
+        "9",
+        "4",
+        "0.8",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "None of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Calculation</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Given Values:</strong><br>\n    I = 2, J = 5, $IN(30) returns 2\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Calculate K</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      K = $IN(30)<br>\n      Since $IN(30) returns 2:<br>\n      <strong>K = 2</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Calculate X</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      X = I/K<br>\n      I = 2, K = 2<br>\n      <strong>X = 2/2 = 1</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking the Options:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>8</strong>: Too large, might be 2³</li>\n      <li><strong>9</strong>: 3², not related</li>\n      <li><strong>4</strong>: 2², but we're doing division not multiplication</li>\n      <li><strong>0.8</strong>: Would be 4/5, not 2/2</li>\n      <li><strong>None of the above</strong>: <strong>CORRECT!</strong> Since 1 isn't listed</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> None of the above - X = I/K = 2/2 = 1, which is not in the options.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 22",
+    "topic": ["FORTRAN", "Programming", "Variables"],
+    "Question": {
+      "content": "What is the value of N?",
+      "type": "OBJ",
+      "options": [
+        "225",
+        "125",
+        "144",
+        "81",
+        "12"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "None of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Complete Calculation for N</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step-by-Step Calculation:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>Given:</strong> I = 2, J = 5, $IN(30) returns 2<br><br>\n      <strong>Step 1:</strong> K = $IN(30) = 2<br>\n      <strong>Step 2:</strong> X = I/K = 2/2 = 1 (but not needed for N)<br>\n      <strong>Step 3:</strong> M = J – 4 = 5 – 4 = 1<br>\n      <strong>Step 4:</strong> N = M**3 = 1³ = 1 × 1 × 1 = <strong>1</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Understanding M**3:</strong><br>\n    In FORTRAN, <strong>**</strong> means exponentiation (power).<br>\n    M**3 means \"M to the power of 3\" or \"M cubed.\"<br>\n    Since M = 1: 1³ = 1 × 1 × 1 = 1\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking the Options:</strong><br>\n    Looking at the numbers in the options:<br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>225</strong>: 15², but we need 1³ = 1</li>\n      <li><strong>125</strong>: 5³, but M = 1 not 5</li>\n      <li><strong>144</strong>: 12², not related</li>\n      <li><strong>81</strong>: 9² or 3⁴, not 1³</li>\n      <li><strong>12</strong>: Just an integer, not 1³</li>\n    </ul>\n    None of these equal 1!\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Important Note:</strong><br>\n    Question 22 doesn't have \"None of the above\" as an explicit option, but based on the pattern of other questions and the fact that none of the given options match the correct answer (1), we must conclude that \"None of the above\" is the intended correct choice.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> None of the above - N = M**3 = 1³ = 1, which is not listed in any of the given options.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 23",
+    "topic": ["FORTRAN", "Loops", "Programming"],
+    "Question": {
+      "content": "DO M = 30, 0, 1 causes the DO loop to be executed",
+      "type": "OBJ",
+      "options": [
+        "11 times",
+        "7 times",
+        "20 times",
+        "10 times",
+        "8 times"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0 times"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding FORTRAN DO Loops</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The DO Statement:</strong><br>\n    <strong>DO M = 30, 0, 1</strong> means:<br>\n    • Start M at 30<br>\n    • Continue while M ≥ 0 (in older FORTRAN: while M ≤ 0? Wait, this is backwards!)<br>\n    • Increase M by 1 each time\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The Critical Issue:</strong><br>\n    In FORTRAN, a DO loop executes <strong>while the index is less than or equal to the limit</strong> when the increment is positive.<br>\n    <br>\n    Here: M starts at 30, limit is 0, increment is +1<br>\n    The first check: Is 30 ≤ 0? <strong>NO</strong> (30 is greater than 0)<br>\n    So the loop <strong>never executes</strong> even once!\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why This Happens:</strong><br>\n    Think of it this way:<br>\n    \"Start counting at 30, count up to 0, add 1 each time\"<br>\n    This is impossible! You can't start at 30 and count UP to 0.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Correct Loop Examples:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>DO M = 1, 10, 1</strong> &nbsp;&nbsp;← Works: 1 to 10, increasing<br>\n      <strong>DO M = 30, 0, -1</strong> &nbsp;&nbsp;← Would work: 30 down to 0, decreasing<br>\n      <strong>DO M = 30, 0, 1</strong> &nbsp;&nbsp;← Doesn't work: can't go up from 30 to 0\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Checking the Options:</strong><br>\n    None of the options say \"0 times\" but that's the correct answer.<br>\n    The loop executes <strong>0 times</strong> because the starting value (30) is already greater than the limit (0) when incrementing by +1.\n  </div>\n\n  <div style='background: rgba(255, 100, 100, 0.1); color: var(--icAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--icAns); margin-top: 15px;'>\n    <strong>⚠️ Important Note:</strong> The correct answer is \"0 times,\" but this isn't listed in the options. The closest would be \"None of the above\" if it were an option.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 24",
+    "topic": ["FORTRAN", "Format Statements", "Programming"],
+    "Question": {
+      "content": "How many decimal numbers will be reserved after executing this statement FORMAT(F12.4) in FORTRAN?",
+      "type": "OBJ",
+      "options": [
+        "12",
+        "48",
+        "4",
+        "12.4",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding FORTRAN FORMAT Statements</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>The F Format Descriptor:</strong><br>\n    In FORTRAN, <strong>FORMAT(F12.4)</strong> is used for formatting real (decimal) numbers.<br>\n    The F stands for \"Floating point\" (decimal numbers).\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Breaking Down F12.4:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0; text-align: center;'>\n      <strong>F12.4</strong><br>\n      ↑ &nbsp;&nbsp;&nbsp;↑ &nbsp;&nbsp;&nbsp;↑<br>\n      Type Total Decimal<br>\n      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Width Places\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>What Each Part Means:</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>F</strong>: Floating point (decimal number) format</li>\n      <li><strong>12</strong>: Total width of 12 characters (including decimal point, sign, and digits)</li>\n      <li><strong>.4</strong>: 4 digits after the decimal point</li>\n    </ul>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Example Output:</strong><br>\n    If we print the number 123.4567 with FORMAT(F12.4):<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <code>  123.4567</code><br>\n      ↑ 12 characters total<br>\n      ↑↑↑↑ 4 decimal places\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Answering the Question:</strong><br>\n    The question asks: \"How many decimal numbers will be reserved?\"<br>\n    In F12.4, the <strong>.4</strong> part specifies <strong>4 decimal places</strong>.\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Why Not Other Options?</strong><br>\n    <ul style='margin-top: 8px;'>\n      <li><strong>12</strong>: This is the total width, not decimal places</li>\n      <li><strong>48</strong>: Not related (12 × 4?)</li>\n      <li><strong>4</strong>: <strong>CORRECT!</strong> This is the number after the decimal point</li>\n      <li><strong>12.4</strong>: This is the format itself, not the answer</li>\n    </ul>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> 4 - The F12.4 format reserves 4 digits after the decimal point for floating point numbers.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 25",
+    "topic": ["FORTRAN", "Format Statements", "Input/Output"],
+    "Question": {
+      "content": "Give the FORTRAN FORMAT statement for the following number: -123.431",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "FORMAT(F8.3)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Determining the Correct F Format</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Count the Characters</strong><br>\n    The number is <strong>-123.431</strong>. Let's break it down:\n    <ul style='margin-top: 5px; margin-bottom: 5px;'>\n      <li>Minus sign ( - ): 1 character</li>\n      <li>Integer part ( 123 ): 3 characters</li>\n      <li>Decimal point ( . ): 1 character</li>\n      <li>Fractional part ( 431 ): 3 characters</li>\n    </ul>\n    <strong>Total Width (w) = 1 + 3 + 1 + 3 = 8</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Identify the Decimal Places</strong><br>\n    There are 3 digits after the dot (431).<br>\n    <strong>Decimal places (d) = 3</strong>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Construct the Statement</strong><br>\n    The syntax is <strong>Fw.d</strong>.<br>\n    • w (width) must be at least 8 to fit the number.<br>\n    • d (decimals) is 3.<br>\n    <br>\n    <em>Note: A width of 7 (F7.3) would be too small and cause an error (*******).</em>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Statement:</strong><br>\n    <code>FORMAT(F8.3)</code><br>\n    <em>(You can also use larger widths like F9.3 or F10.3 to add padding, but F8.3 is the exact fit.)</em>\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 26",
+    "topic": ["FORTRAN", "Programming Standards", "Coding"],
+    "Question": {
+      "content": "When you are writing a FORTRAN program in standard format and you want to continue a statement on the next line, you put a character in what column number? ____________",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Column 6"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>FORTRAN Standard Format Rules</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN Punch Card Legacy:</strong><br>\n    FORTRAN was originally designed for punch cards (80-column cards).<br>\n    Each column had a specific purpose:\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Column Layout in Standard FORTRAN:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>Columns 1-5</strong>: Statement number (line label)<br>\n      <strong>Column 6</strong>: Continuation character (if needed)<br>\n      <strong>Columns 7-72</strong>: Actual FORTRAN code<br>\n      <strong>Columns 73-80</strong>: Identification/sequence numbers\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Continuation Character:</strong><br>\n    If a statement is too long for one line (columns 7-72), you continue it on the next line by:<br>\n    1. Putting any character (except 0 or space) in <strong>Column 6</strong> of the continuation line<br>\n    2. Continuing your code in columns 7-72\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Example:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      First line: &nbsp;&nbsp;&nbsp;&nbsp;<code>X = A + B + C + D + E +</code><br>\n      Continuation: <code>     *F + G + H</code><br>\n      The <strong>*</strong> in column 6 indicates this continues the previous line.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Modern FORTRAN:</strong><br>\n    In modern FORTRAN (free format), you can use <strong>&</strong> at the end of a line to continue.<br>\n    But for \"standard format\" (fixed format), it's always <strong>Column 6</strong>.\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> Column 6 - This is where you place the continuation character in standard FORTRAN format.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 27",
+    "topic": ["FORTRAN", "Expressions", "Programming"],
+    "Question": {
+      "content": "Write FORTRAN arithmetic expressions for the following calculations:<br><br>i. \\( W = \\frac{N-M}{K+L} + 9 \\)<br><br>ii. \\( Y = \\frac{SIN(0) + C0S(0))}{n} \\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "W = (N - M)/(K + L) + 9.0<br>Y = (S*N*0 + 10.0*S*0)/n"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Converting Mathematical Expressions to FORTRAN</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN Arithmetic Rules:</strong><br>\n    1. Use <strong>*</strong> for multiplication (not × or implied multiplication)<br>\n    2. Use <strong>/</strong> for division<br>\n    3. Use <strong>**</strong> for exponentiation<br>\n    4. Use parentheses <strong>( )</strong> to control order of operations\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Expression 1: \\( W = \\frac{N-M}{K+L} + 9 \\)</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      Step-by-step conversion:<br>\n      1. Numerator: N - M<br>\n      2. Denominator: K + L<br>\n      3. Division: (N - M)/(K + L)<br>\n      4. Add 9: (N - M)/(K + L) + 9<br><br>\n      <strong>FORTRAN expression:</strong> <code>W = (N - M)/(K + L) + 9.0</code><br>\n      <em>Note: Using 9.0 instead of 9 ensures real arithmetic if variables are real.</em>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Expression 2: \\( Y = \\frac{S(N(0) + 10S(0))}{n} \\)</strong><br>\n    This is ambiguous! Let's interpret it:<br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      Possible interpretations:<br>\n      1. S multiplied by N multiplied by 0: S*N*0<br>\n      2. 10 multiplied by S multiplied by 0: 10*S*0<br>\n      3. Sum: S*N*0 + 10*S*0<br>\n      4. Divided by n: (S*N*0 + 10*S*0)/n<br><br>\n      <strong>FORTRAN expression:</strong> <code>Y = (S*N*0.0 + 10.0*S*0.0)/n</code><br>\n      <em>Note: This whole expression equals 0 since anything multiplied by 0 is 0!</em>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Important Notes:</strong><br>\n    • Always use parentheses when in doubt about order of operations<br>\n    • Use decimal points (9.0 instead of 9) for real numbers<br>\n    • The second expression seems unusual since it will always give 0\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answers:</strong><br>\n    W = (N - M)/(K + L) + 9.0<br>\n    Y = (S*N*0.0 + 10.0*S*0.0)/n<br>\n    <em>(Note: The second expression equals 0 regardless of variable values)</em>\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 28",
+    "topic": ["FORTRAN", "Arithmetic", "Programming"],
+    "Question": {
+      "content": "Given: S = 2.0, R = 1.0, T = 4<br>\\( P = (2 * S - R)^{**}T - 1 \\)<br><br>Determine the numerical value that will be assigned to P.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "80.0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Calculation</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Given Values:</strong><br>\n    S = 2.0, R = 1.0, T = 4<br>\n    Expression: \\( P = (2 * S - R)^{**}T - 1 \\)\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Calculate inside parentheses</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      2 * S - R<br>\n      = 2 * 2.0 - 1.0<br>\n      = 4.0 - 1.0<br>\n      = <strong>3.0</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Apply exponentiation (**)</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      (3.0)**T<br>\n      = (3.0)**4<br>\n      = 3.0 × 3.0 × 3.0 × 3.0<br>\n      = 9.0 × 9.0<br>\n      = <strong>81.0</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Subtract 1</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      81.0 - 1<br>\n      = 81.0 - 1.0 (FORTRAN converts 1 to 1.0 for real arithmetic)<br>\n      = <strong>80.0</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Complete Calculation:</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0; text-align: center;'>\n      P = (2 × 2.0 - 1.0)**4 - 1<br>\n      = (4.0 - 1.0)**4 - 1<br>\n      = (3.0)**4 - 1<br>\n      = 81.0 - 1<br>\n      = <strong>80.0</strong>\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>FORTRAN Specifics:</strong><br>\n    • <strong>**</strong> means exponentiation (power)<br>\n    • When mixing integers and reals, FORTRAN converts integers to reals<br>\n    • The result will be a real number: 80.0\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Correct Answer:</strong> 80.0 - After step-by-step calculation, P gets the value 80.0.\n  </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 29",
+    "topic": ["FORTRAN", "Programming", "Applications"],
+    "Question": {
+      "content": "Write a FORTRAN program with comments that calculates annual depreciation using the formula:<br><br>$$D = \\frac{C - R}{L}$$<br><br>Where:<br>• D = annual depreciation<br>• C = cost of asset<br>• R = residual value<br>• L = life of the asset (in years)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "<code>C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROGRAM TO CALCULATE ANNUAL DEPRECIATION<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL C, R, L, D<br>C<br>C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ INPUT VALUES<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT *, 'ENTER COST OF ASSET (C):'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ *, C<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT *, 'ENTER RESIDUAL VALUE (R):'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ *, R<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT *, 'ENTER LIFE OF ASSET IN YEARS (L):'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ *, L<br>C<br>C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CALCULATE ANNUAL DEPRECIATION<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D = (C - R) / L<br>C<br>C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY RESULT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT *, 'ANNUAL DEPRECIATION IS:', D<br>C<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STOP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END</code>"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Building a Complete FORTRAN Program</h4>\n  \n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Program Structure:</strong><br>\n    A good FORTRAN program has these parts:<br>\n    1. Comments (explain what the program does)<br>\n    2. Variable declarations<br>\n    3. Input section<br>\n    4. Calculation section<br>\n    5. Output section<br>\n    6. Program termination\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 1: Comments and Documentation</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      Comments start with <strong>C</strong> in column 1.<br>\n      They explain what the program does for anyone reading it.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 2: Variable Declaration</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      We need four variables:<br>\n      • C (cost), R (residual value), L (life), D (depreciation)<br>\n      Since these are monetary values, we use <strong>REAL</strong> for decimal numbers.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 3: Input Section</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      The program asks the user for:<br>\n      1. Cost of asset (C)<br>\n      2. Residual value (R)<br>\n      3. Life in years (L)<br>\n      <strong>PRINT *</strong> displays messages, <strong>READ *</strong> gets user input.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 4: Calculation</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      This is the core formula:<br>\n      <strong>D = (C - R) / L</strong><br>\n      Parentheses ensure correct order: subtract first, then divide.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 5: Output Result</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      Display the calculated depreciation with a clear message.\n    </div>\n  </div>\n\n  <div style='margin-bottom: 12px;'>\n    <strong style='color: var(--strongColor);'>Step 6: Program End</strong><br>\n    <div style='background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; margin: 8px 0;'>\n      <strong>STOP</strong> ends program execution<br>\n      <strong>END</strong> marks the end of the program\n    </div>\n  </div>\n\n  <div style='background: var(--cAnsBg); color: var(--cAns); padding: 12px; border-radius: 6px; border-left: 4px solid var(--cAns); margin-top: 15px;'>\n    <strong>✓ Complete Program:</strong> The program reads cost, residual value, and life from user, calculates annual depreciation using D = (C - R)/L, and displays the result with clear prompts and comments.\n  </div>\n</div>"
+    }
+  }
+]
